@@ -1,0 +1,6 @@
+#pragma once
+#include <string>
+
+std::string getRootDir() {
+    return "@PROJECT_ROOT_DIR@";
+}
