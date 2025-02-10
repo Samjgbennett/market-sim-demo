@@ -2,5 +2,5 @@
 #include <string>
 
 std::string getRootDir() {
-    return "C:/Users/auras/source/repos/IB9JHO-market-sim";
+    return "/Users/samjgbennett/Documents/GitHub/market-sim-demo";
 }

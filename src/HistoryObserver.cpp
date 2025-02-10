@@ -5,6 +5,9 @@ HistoryObserver::HistoryObserver(unsigned int maximum_history)
 	m_maximum_history(maximum_history)
 {}
 
+// Could have a similar idea for options, if less than expiry time then do something, at expiry time do somehting else
+
+// update the observer for the current tick (tick is current time step) and asset value
 void HistoryObserver::update(double value, unsigned int current_tick)
 {
 	(void) current_tick;

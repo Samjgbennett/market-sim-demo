@@ -13,10 +13,10 @@
 class HistoryObserver : public AssetObserver
 {
 
-	// maximum recent history to track
+	// maximum recent history to track, can't grow arbitrarily
 	unsigned int m_maximum_history;
 
-	// double ended queue to store the recent history of the asset 
+	// deque = double ended queue,to store the recent history of the asset, easier to add & remove elements from start & end
 	std::deque<double> m_recent_history;
 
 public:

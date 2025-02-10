@@ -1,7 +1,11 @@
 #include "AssetHistory.h"
 #include "Util.h"
 
-// random seed is based on the current time
+
+// seed is static_cast<long unsigned int>(time(0)) 
+// random seed is based on the current time, thus making non-deterministic output for generating Brownian motion
+// H// makes testing more difficult to test, should test originally with constants
+// this is equivilent to Random.seed from python
 thread_local std::default_random_engine AssetHistory::RANDOM_GENERATOR{ static_cast<long unsigned int>(time(0)) };
 
 using stringstream = std::stringstream;
